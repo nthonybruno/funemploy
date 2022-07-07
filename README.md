@@ -1,6 +1,13 @@
 # FunEmploy
 A smarter way to job hunt. (In the works, project started 7/6/2022)
 
+## Elevator Pitch
+FunEmploy puts the fun back into the job search process by taking the work out of it. Getting a job has become a full time job. This project will automate the job search process by bringing relevant listings directly to the user across various job-posting platforms. It addresses the problem the average job-seeker faces of tediously sifting through job postings across multiple sites to find relevant listings that match the seeker's interests, experience and salary expectations. Better yet, FunEmploy offers email and SMS notifications on new job postings across sites. FunEmploy brings relevant jobs right to the user, and with the notification system they can be one of the first to apply.
+
+
+## Design Premise
+Site connectors fetch semi-relevant job postings from numerous job sites based on user descretion (Experience Level, Title, Location, etc.) -> Filter Algorithm applies second layer of filtering so user only sees hyper relevant listings -> Notification system alerts user of relevant listings (Twilio SMS, SMTP Email) -> Automated background scan regularly checks for new listings, alerts user if/when -> Front End (FunEmploy.net)
+
 ## Up Next
 1. Begin building FunEmploy core app functionality
    1. [Startup.jobs](https://startup.jobs/) connector (Web Scraping w/ Python)
