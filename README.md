@@ -32,3 +32,4 @@ Site connectors fetch semi-relevant job postings from numerous job sites based o
 - Set up CloudFlare account for free SSL certificating
 - Transfered GoDaddy nameservers to CloudFlare nameservers, website now uses HTTPS
 - Updated HTML splash page to be responsive and include favicon, site now functional and live
+- Added GitHub link to splash page, logo on the page is a link. Just tap the screen.
