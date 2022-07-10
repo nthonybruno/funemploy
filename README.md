@@ -20,12 +20,12 @@ Site connectors fetch semi-relevant job postings from numerous job sites based o
  2. Much more, TBD
 
 ## Completion Log
-**June 6th, 2022**
+**July 6th, 2022**
 - Registered [FunEmploy.net](www.funemploy.net) with GoDaddy
 - Created this GitHub repo
 - Built custom HTML splash page to park on domain for time being
 
-**June 7th, 2022**
+**July 7th, 2022**
 - Created funemploy.net splash page [repo](https://github.com/nthonybruno/funemploy-splash-page)
 - Pushed custom HTML splash page contents to the repo and set up Pages for it
 - Added GitHub Pages DNS records to funemploy.net on GoDaddy
@@ -33,3 +33,8 @@ Site connectors fetch semi-relevant job postings from numerous job sites based o
 - Transfered GoDaddy nameservers to CloudFlare nameservers, website now uses HTTPS
 - Updated HTML splash page to be responsive and include favicon, site now functional and live
 - Added GitHub link to splash page, logo on the page is a link. Just tap the screen.
+
+**July 10th, 2022**
+- Created job.py to standardize job posting information on backend and how it will be handled by funemply
+- Began preliminary work to web scrape startup.jobs using beautifulsoup, program succesfully captures first page job posting headers
+- To Do: Rename main.py, better document Job.py and main.py, allow pagination for startup.jobs (capture job posting headers from ALL pages)
