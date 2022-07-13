@@ -11,14 +11,16 @@ Site connectors fetch semi-relevant job postings from numerous job sites based o
 
 ## Up Next
 1. Begin building FunEmploy core app functionality
-   1. [Startup.jobs](https://startup.jobs/) connector (Web Scraping w/ Python)
+   1. [Startup.jobs](https://startup.jobs/) connector (Web Scraping w/ Python) 
+      1. Retrieve posting headers (title, location, link to post) **<-- IN PROGRESS**
+      2. Add ability to paginate to retrieve all postings
    2. [LinkedIn](https://www.linkedin.com/jobs) connector (API)
    3. Google Jobs connector (API) 
    4. [Indeed](https://www.indeed.com/) connector (API)
    5. [builtin](https://builtin.com/jobs) connector (Web Scraping w/ Python)
    6. [Glassdoor](https://www.glassdoor.com/index.htm) connector (Web Scraping w/ Python)
    7. [Levels](https://www.levels.fyi/still-hiring/) connector (Web Scraping w/ Python)
- 2. Much more, TBD
+ 2. Once we have functionality to retrieve posting headers, next step is to build a back-end filter algo to decide whether or not to traverse to the dedicated job posting sub link, and scan for qualification, experience, and further criteria to determine if the posting should be discarded or forwarded to the user.
 
 ## Completion Log
 **July 6th, 2022**
@@ -38,4 +40,7 @@ Site connectors fetch semi-relevant job postings from numerous job sites based o
 **July 10th, 2022**
 - Created job.py to standardize job posting information on backend and how it will be handled by funemply
 - Began preliminary work to web scrape startup.jobs using beautifulsoup, program succesfully captures first page job posting headers
-- To Do: Rename main.py, better document Job.py and main.py, allow pagination for startup.jobs (capture job posting headers from ALL pages)
+
+**July 12th, 2022**
+- Improved documentation and naming schemes for startup.jobs connector.
+- Allow pagination for startup.jobs (capture job posting headers from ALL pages)
