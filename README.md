@@ -1,6 +1,6 @@
 # FunEmploy
 A smarter way to job hunt. (In the works, project started 7/6/2022)
-[FunEmploy.net](wwww.funemploy.net)
+[FunEmploy.net](www.funemploy.net)
 
 ## Elevator Pitch
 FunEmploy puts the fun into the job search process by taking the work out of it. Getting a job has become a full time job. This project will automate the job search process by bringing relevant listings directly to the user across various job-posting platforms. It addresses the problem the average job-seeker faces of tediously sifting through job postings across multiple sites to find relevant listings that match the seeker's interests, experience and salary expectations. Better yet, FunEmploy offers email and SMS notifications on new job postings across sites. FunEmploy brings relevant jobs right to the user, and with the notification system they can be one of the first to apply.
