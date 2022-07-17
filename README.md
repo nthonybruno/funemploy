@@ -12,8 +12,8 @@ Site connectors fetch semi-relevant job postings from numerous job sites based o
 ## Up Next
 1. Begin building FunEmploy core app functionality
    1. [Startup.jobs](https://startup.jobs/) connector (Web Scraping w/ Python) 
-      1. Retrieve posting headers (title, location, link to post) **<-- IN PROGRESS**
-      2. Add ability to paginate to retrieve all postings
+      1. Retrieve posting headers (title, location, link to post) 
+      2. Add ability to paginate to retrieve all postings **<-- IN PROGRESS**
    2. [LinkedIn](https://www.linkedin.com/jobs) connector (API)
    3. Google Jobs connector (API) 
    4. [Indeed](https://www.indeed.com/) connector (API)
