@@ -12,8 +12,8 @@ URL = "https://startup.jobs/?c=Full-Time"
 # Page 2: https://startup.jobs/?c=Full-Time&page=2
 # If you go over, page returns "No jobs found. Subscribe below to get notified when we find something for you." So paginate until this is found, then backtrack one.
 page = requests.get(URL)
-content = BeautifulSoup(page.text, features="lxml")
-#content = BeautifulSoup(page.text, 'html.parser')
+#content = BeautifulSoup(page.text, features="lxml")
+content = BeautifulSoup(page.text, 'html.parser')
 
 target_content_parent_element = content.find_all("div", class_="content")
 result = []
