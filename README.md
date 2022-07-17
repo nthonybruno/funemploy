@@ -13,7 +13,9 @@ Site connectors fetch semi-relevant job postings from numerous job sites based o
 1. Begin building FunEmploy core app functionality
    1. [Startup.jobs](https://startup.jobs/) connector (Web Scraping w/ Python) 
       1. Retrieve posting headers (title, location, link to post) 
-      2. Add ability to paginate to retrieve all postings **<-- IN PROGRESS**
+      2. Allow pagination for startup.jobs (capture job posting headers from ALL pages, not just first) **<-- IN PROGRESS**
+      3. Create temporary local MySQL Community Server for development environment purposes, allow storage of header results.
+      4. Add "last scan date-time" logic, so that it is not continously pinging servers. Should probably only run once every 4 hours max. If it has been less than that time, ping the SQL server and return those results again.
    2. [LinkedIn](https://www.linkedin.com/jobs) connector (API)
    3. Google Jobs connector (API) 
    4. [Indeed](https://www.indeed.com/) connector (API)
@@ -43,4 +45,6 @@ Site connectors fetch semi-relevant job postings from numerous job sites based o
 
 **July 12th, 2022**
 - Improved documentation and naming schemes for startup.jobs connector.
-- Allow pagination for startup.jobs (capture job posting headers from ALL pages)
+
+## Future Challenges
+Right now this is a one-world script. If I sent it to my friend, they would see the same things as me. I need to add user/access management so that you do not need to replicate template versions of the script. This will mean hosting the program instance on the cloud, having secure user authentication (program will store contact information to notify users of new job postings), building out a front-end for it all, and then attatching it to FunEmploy.net
