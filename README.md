@@ -45,9 +45,12 @@ Site connectors fetch semi-relevant job postings from numerous job sites based o
 
 **July 12th, 2022**
 - Improved documentation and naming schemes for startup.jobs connector.
-- 
+
 **July 17th, 2022**
 - Status Update: Web scraping startup.jobs is not nearly as easy as it originally appeared, which I should have expected. I can easily retrieve the first page of results using the requests library. However, startup.jobs uses Algolia for search & discovery, so it has to send an API call to grab each page of results. The problem is additional pages of results are populated AFTER the GET response it sends, so I am repeatedly grabbing the same page of results. I have figured out where this query happens in the process, however, I am not sure how to call this query to retrieve the JSON file of results back, nor if this is something I can legally/functionaly do.
+
+**July 26th, 2022**
+- Status Update: Pace has slowed due to applications & interviews. The python requests library is insufficent to scrape startup.jobs, I need to explore selenium. Also, funemploy.net does not resolve appropriately on my computer anymore, although it does on Safari mobile browsers. This may be a personal issue, but it broke without me changing anything. Weird.
 
 ## Future Challenges
 Right now this is a one-world script. If I sent it to my friend, they would see the same things as me. I need to add user/access management so that you do not need to replicate template versions of the script. This will mean hosting the program instance on the cloud, having secure user authentication (program will store contact information to notify users of new job postings), building out a front-end for it all, and then attatching it to FunEmploy.net
